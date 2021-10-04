@@ -2,19 +2,20 @@
 import { Card, Col, Row } from 'react-bootstrap';
 
 const Data = (props) => {
-const {name,picture, about} = props.data;
+const {name,picture, about, price} = props.data;
 
     return (
         <div className="">
-                    <Row xs={1} md={2} className="g-4 d-flex mr-auto">
+                    <Row xs={1} md={2} className="">
                         {Array.from({ length: 1 }).map((_, idx) => (
                             <Col>
-                            <Card>
-                                <Card.Img variant="top" src={picture} />
+                            <Card className="rounded mx-auto d-block">
+                                <Card.Img className="text-center" variant="top" src={picture} />
                                 <Card.Body>
                                 <Card.Title>Course: {name}</Card.Title>
                                 <Card.Text>
                                     {about}
+                                    <p>Price: {price}</p>
                                 </Card.Text>
                                 </Card.Body>
                             </Card>
