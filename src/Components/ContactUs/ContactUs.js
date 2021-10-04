@@ -13,14 +13,14 @@ const ContactUs = () => {
            
            <div>
            <Form>
-                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Label>Your Email</Form.Label>
-                            <Form.Control type="email" placeholder="name@example.com" />
+                    <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
+                            <Form.Label className="text-light">Your Email</Form.Label>
+                            <Form.Control className="bg-info" type="email" placeholder="name@example.com" />
                     </Form.Group>
-                        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                            <Form.Label>Tell us what you want</Form.Label>
-                            <Form.Control as="textarea" rows={3} />
-                            <button>Post</button>
+                        <Form.Group className="mb-4" controlId="exampleForm.ControlTextarea1">
+                            <Form.Label className="text-light">Tell us what you want</Form.Label>
+                            <Form.Control className="bg-info" as="textarea" rows={3} />
+                            <button className="bg-success">Post</button>
                     </Form.Group>
             </Form>
             </div>  

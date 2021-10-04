@@ -1,27 +1,29 @@
-import React from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import Data from './Data/Data';
+import { Row } from 'react-bootstrap';
 
-const Services = (props) => {
-    const {name, price, picture, about} = props.info;
+
+const Services = () => {
+    const [probs, setProbs] = useState([]);
+    useEffect(()=>{
+        fetch('./data.json')
+        .then(res => res.json())
+        .then(data => setProbs(data))
+
+    }
+    ,[]);
+    // console.log(probs)
     return (
+        
         <div>
-            
-            <Row xs={1} md={2} className="g-4">
-               
-               <Col>
-                   <Card>
-                       <Card.Img variant="top" src={picture} />
-                       <Card.Body>
-                       <Card.Title>{name}</Card.Title>
-                       <Card.Text>
-                          <h6>Price: {price} (Yearly)</h6>
-                          <p><small>{about}</small></p>
-                       </Card.Text>
-                       </Card.Body>
-                   </Card>
-               </Col>
-          
-       </Row>
+         <Row xs={1} md={2} className="g-4">
+            {
+                probs.map(para => <Data
+                key={para._id}
+                data={para}
+                ></Data>)
+            }
+     </Row>
         </div>
     );
 };
