@@ -10,8 +10,8 @@ const Header = () => {
                   
                 <Navbar bg="dark" variant="dark">
                     <Container>
-                    <Navbar.Brand to="/home">LOGO HERE</Navbar.Brand>
-                        <Nav className="links me-center textDecoration: 'none'">
+                    <Navbar.Brand to="/home">FITNESS CLUB</Navbar.Brand>
+                        <Nav className="links me-center ">
                             <NavLink to="/home">Home</NavLink>
                             <NavLink to="/about">About Us</NavLink>
                             <NavLink to="/services">Our Services</NavLink>

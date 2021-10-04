@@ -4,8 +4,7 @@ import { Card, Col, Row } from 'react-bootstrap';
 const Body = (props) => {
     const {name, price, picture, about} = props.info;
     return (
-        <div>
-           <Row xs={1} md={2} className="g-4">
+        <div>         
                
                     <Col>
                         <Card>
@@ -20,7 +19,7 @@ const Body = (props) => {
                         </Card>
                     </Col>
                
-            </Row>
+           
         </div>
     );
 };

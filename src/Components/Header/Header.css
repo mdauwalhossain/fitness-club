@@ -1,4 +1,17 @@
-.menu-bar .links{
+.menu-bar .links a{
     text-decoration: none;
     color: white;
+    margin-left: 30px;
+}
+.menu-bar .links a:hover{
+    background-color: teal;
+   padding-left: 5px;
+   padding-right: 5px;
+    
+
+}
+.Navbar .Container .Navbar.Brand{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: tomato;
 }
