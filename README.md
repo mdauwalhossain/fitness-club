@@ -1,6 +1,5 @@
 # Stay with Fitness Club
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ensure you Strong.
 
 ## Why Fitness Club?
 
@@ -10,5 +9,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Website Link
 
-Click Here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Click Here: [https://fitness-club-bd.netlify.app/home](https://fitness-club-bd.netlify.app/home)
 
