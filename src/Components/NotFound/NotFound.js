@@ -6,10 +6,10 @@ const NotFound = () => {
         <div>
            <>
   <Card className="rounded mx-auto d-block">
-    <Card.Img variant="top" src="https://img.freepik.com/free-vector/404-error-page-found-minimalist-dark-concept-cryptocurrency-website_111925-130.jpg?size=626&ext=jpg" />
+    <Card.Img variant="top" src="https://www.prestashop.com/sites/default/files/styles/blog_750x320/public/blog/2019/10/banner_error_404.jpg?itok=eAS4swln" />
     <Card.Body>
       <Card.Text>
-       <h1> Search by a valid name, please.</h1>
+       <h1> 404 || Search by a valid name, please.</h1>
       </Card.Text>
     </Card.Body>
   </Card>

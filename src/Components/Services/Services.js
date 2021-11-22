@@ -16,14 +16,15 @@ const Services = () => {
     return (
         
         <div>
-         <Row xs={1} md={2} className="g-4">
-            {
-                probs.map(para => <Data
-                key={para._id}
-                data={para}
-                ></Data>)
-            }
-     </Row>
+            <Row xs={1} md={2} className="g-4">
+                {
+                    probs.map(para => <Data
+                    key={para._id}
+                    data={para}
+                    ></Data>)
+                }
+                
+            </Row>
         </div>
     );
 };
